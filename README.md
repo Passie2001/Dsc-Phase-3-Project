@@ -90,14 +90,43 @@ Develop a classifier capable of predicting the outcome of a Terry Stop (whether 
 
 # Modelling
 
-Logistic Regression - baseline Random Forest Classifier Suport Vector Machine
+Logistic Regression - baseline Model
+Cross validation scores: 84.7402
+The baseline model was correct 84.74 % most of the time in its classification.
+
+Random Forest Classifier
+rfc_model Accuracy: 84.5305
+The Random Forest classifier was correct 84% in its classification most of the time.
+
+Suport Vector Machine
+Cross validation scores: [0.8573382  0.84639927 0.83956244 0.83956244 0.83409298]
+The SVC model was correct 84.34% most of the time
 
 # Evaluation
 
-recall f1 score precision accuracy
+Recall, f1 score, precision accuracy. By use of confusion matrix I came to the following conclusion
+
+![alt text](image.png)
+
+7851 observations were correctly predicted as 0 (True Negatives)
+358 observations were incorrectly predicted as 1 (False Positives)
+1142 observations were incorrectly predicted as 0 (False Negatives)
+1619 observations were correctly predicted as 1 (True Positives)
 
 
 # Conclusion
 
 In summary, the outcomes of this project suggest that machine learning models are valuable tools for analyzing Terry stop data and predicting resolution arrests. The model has effectively pinpointed the key features essential for making accurate predictions, offering valuable insights for policymakers and law enforcement agencies. However, it's essential to recognize that this analysis represents only a portion of the overall assessment, and additional investigation may be necessary to obtain a more comprehensive understanding of the dataset.
 
+## 8. Recommendations
+
+1. **Officer Training:** Train officers on the appropriate circumstances for making arrests during Terry Stops, as this is a key factor in predicting arrests. Ensure that the officer's precinct is recorded for all Terry Stops to improve arrest prediction accuracy. Additionally, educate officers on the appropriate situations for conducting frisks, another significant predictor of arrests.
+
+2. **Address Data Biases:** The model's predictions might be influenced by biases present in the data, such as those based on race, gender, or location. Identifying and addressing these biases is crucial to ensure the model provides fair and unbiased predictions.
+
+**Next Steps:**
+While an 84% accuracy rate is decent, there is room for improvement. Enhancing the model's accuracy could involve further data cleaning or adjusting the model inputs. Exploring other classification models, such as deep learning models, could also yield more accurate predictions.
+
+**Further Data Analysis:** Although the machine learning model has identified the most important features for predictions, additional analysis is necessary to gain a deeper understanding of the data and uncover any potential biases or correlations between features.
+
+In conclusion, the Terry Stop project has demonstrated the potential for using machine learning models to analyze Terry Stop data. However, it is essential to continuously monitor and evaluate the model's performance to ensure it remains accurate and relevant over time.
