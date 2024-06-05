@@ -23,7 +23,7 @@ This data represents records of police reported stops under Terry v. Ohio, 392 U
 
 http://www.seattle.gov/police
 
-This dataset comprises records of police-reported stops conducted under Terry v. Ohio, 392 U.S. 1 (1968). Each row represents a distinct stop, containing perceived demographic information about the subject as reported by the officer initiating the stop, along with demographic details of the officer reported to the Seattle Police Department for employment purposes. Additionally, the dataset includes data elements from the corresponding Computer Aided Dispatch (CAD) event, such as Call Type, Initial Call Type, and Final Call Type, wherever available.
+This dataset comprises records of police-reported stops conducted under Terry v. Ohio, 392 U.S. 1 (1968). Each row represents a distinct stop, containing perceived demographic information about the subject as reported by the officer initiating the stop, along  with demographic details of the officer reported to the Seattle Police Department for employment purposes. Additionally, the dataset includes data elements from the corresponding Computer Aided Dispatch (CAD) event, such as Call Type, Initial Call Type, and Final Call Type, wherever available.
 
 # Features
 
